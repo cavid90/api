@@ -23,6 +23,10 @@ class Api
         return json_encode($data);
     }
 
+    /**
+     * @return string
+     * Make automatic Limit string for sql query
+     */
     public function limitSql()
     {
         $page = (isset($_GET['page']) && (int) $_GET['page'] > 0 ) ? (int)$_GET['page'] : 1;
