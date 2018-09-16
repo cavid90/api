@@ -22,3 +22,5 @@ At the moment there is one api for orders Which has:
 #How to add another apis and endpoints
 1. Create new class which extends Api.php class in Classes folder
 2. Add new folder in api folder and create index.php file (or another) and begin to write your api
+
+#####Htacess is configured to automatically rewrite files in api folder

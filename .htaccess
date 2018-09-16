@@ -4,7 +4,9 @@ RewriteRule ^([0-9a-zA-Z_-]+)$ api/$1/index.php?method=list [NC,L,QSA] # Get lis
 
 RewriteCond %{REQUEST_METHOD} =POST
 RewriteRule ^order$ api/orders/index.php [NC,L] #Create an order
+RewriteRule ^([0-9a-zA-Z_-]+)$ api/$1/index.php
 
 RewriteCond %{REQUEST_METHOD} =PUT
+RewriteRule ^([0-9a-zA-Z_-]+)/([0-9]+)$ api/$1/index.php?method=take&id=$2 [NC,L] # Set status of an order to "taken"
 RewriteRule ^order/([0-9]+)$ api/orders/index.php?method=take&id=$1 [NC,L] # Set status of an order to "taken"
 
