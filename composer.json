@@ -10,5 +10,10 @@
   },
   "autoload": {
     "psr-4": {"Classes\\": "Classes/"}
-  }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/cavid90/api"
+    }
 }
