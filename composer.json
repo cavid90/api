@@ -7,8 +7,8 @@
   "version": "1.0",
   "repositories": [
     {
-      "type": "vcs",
-      "url": "https://github.com/cavid90/api"
+      "type": "package",
+      "url": "https://github.com/cavid90/api.git"
     }
   ],
   "require": {
