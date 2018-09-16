@@ -1,0 +1,10 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteCond %{REQUEST_METHOD} =GET
+RewriteRule ^([0-9a-zA-Z_-]+)$ api/$1/index.php?method=list [NC,L,QSA] # Get list of orders
+
+RewriteCond %{REQUEST_METHOD} =POST
+RewriteRule ^order$ api/orders/index.php [NC,L] #Create an order
+
+RewriteCond %{REQUEST_METHOD} =PUT
+RewriteRule ^order/([0-9]+)$ api/orders/index.php?method=take&id=$1 [NC,L] # Set status of an order to "taken"
+

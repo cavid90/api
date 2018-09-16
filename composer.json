@@ -1,0 +1,14 @@
+{
+  "name": "api/php-restfull-api",
+  "type": "project",
+  "description": "Php restfull api example",
+  "homepage": "http://cavid.net",
+  "license": "No License",
+  "version": "1.0",
+  "require": {
+
+  },
+  "autoload": {
+    "psr-4": {"Classes\\": "Classes/"}
+  }
+}
