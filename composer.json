@@ -5,13 +5,8 @@
   "homepage": "http://cavid.net",
   "license": "No License",
   "version": "1.0",
-  "repositories": [
-    {
-      "type": "package",
-      "url": "https://github.com/cavid90/api.git"
-    }
-  ],
   "require": {
+    "php": ">=5.5.9"
   },
   "autoload": {
     "psr-4": {"Classes\\": "Classes/"}
