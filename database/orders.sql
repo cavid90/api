@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 --
 -- Структура таблицы `orders`
 --
-
+DROP TABLE IF EXISTS `orders`;
 CREATE TABLE IF NOT EXISTS `orders` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `distance` varchar(20) DEFAULT NULL,
