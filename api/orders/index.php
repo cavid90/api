@@ -12,6 +12,9 @@ header("Content-Type: application/json; charset=UTF-8");
 $method = isset($_GET['method']) ? $_GET['method'] : '';
 $orders = new \Classes\Orders();
 switch($method) {
+    /**
+     * Take (update) the order
+     */
     case 'take':
         header("Access-Control-Allow-Methods: PUT");
         $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
@@ -20,6 +23,9 @@ switch($method) {
         echo $result;
         break;
 
+    /**
+     * Get list of orders
+     */
     case 'list':
         header("Access-Control-Allow-Methods: GET");
 
@@ -28,6 +34,9 @@ switch($method) {
 
         break;
 
+    /**
+     * Create new order
+     */
     default:
 
         header("Access-Control-Allow-Methods: POST");
