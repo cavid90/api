@@ -7,6 +7,11 @@
   "homepage": "http://cavid.net",
   "license": "No License",
   "version": "1.0",
+  "repositories": [{
+    "type": "vcs",
+    "url": "git@github.com:cavid90/api.git"
+  }
+  ],
   "require": {
     "php": ">=5.6"
   },
