@@ -1,6 +1,7 @@
 {
   "name": "api/php-restfull-api",
   "minimum-stability": "dev",
+  "prefer-stable": true,
   "type": "project",
   "description": "Php restfull api example",
   "homepage": "http://cavid.net",
