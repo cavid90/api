@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 17 2018 г., 00:40
+-- Время создания: Сен 17 2018 г., 01:02
 -- Версия сервера: 5.5.53
 -- Версия PHP: 7.1.0
 
@@ -26,31 +26,13 @@ SET time_zone = "+00:00";
 -- Структура таблицы `orders`
 --
 
-CREATE TABLE `orders` (
-  `id` int(11) UNSIGNED NOT NULL,
+CREATE TABLE IF NOT EXISTS `orders` (
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `distance` varchar(20) DEFAULT NULL,
-  `status` varchar(20) DEFAULT 'UNASSIGN'
+  `status` varchar(20) DEFAULT 'UNASSIGN',
+  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Индексы сохранённых таблиц
---
-
---
--- Индексы таблицы `orders`
---
-ALTER TABLE `orders`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT для сохранённых таблиц
---
-
---
--- AUTO_INCREMENT для таблицы `orders`
---
-ALTER TABLE `orders`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
