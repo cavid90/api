@@ -5,15 +5,15 @@
   "homepage": "http://cavid.net",
   "license": "No License",
   "version": "1.0",
-  "require": {
-
-  },
-  "autoload": {
-    "psr-4": {"Classes\\": "Classes/"}
-  },
   "repositories": [
     {
       "type": "vcs",
       "url": "https://github.com/cavid90/api"
     }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {"Classes\\": "Classes/"}
+  }
 }
