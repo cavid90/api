@@ -7,7 +7,7 @@
   "license": "No License",
   "version": "1.0",
   "require": {
-    "php": ">=5.5.9 || >= 7.00"
+    "php": ">=5.6"
   },
   "autoload": {
     "psr-4": {"Classes\\": "Classes/"}
