@@ -1,5 +1,6 @@
 {
   "name": "api/php-restfull-api",
+  "prefer-stable": true,
   "type": "project",
   "description": "Php restfull api example",
   "homepage": "http://cavid.net",
