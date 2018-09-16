@@ -1,4 +1,4 @@
-# api
+# Php Restfull Api
 This is restfull api package. You can easily extend it and add more apis
 
 #Installation
