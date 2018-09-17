@@ -9,7 +9,7 @@
   "version": "1.0",
   "repositories": [
     {
-    "type": "vcs",
+    "type": "package",
     "url": "git@github.com:cavid90/api.git"
     }
   ],
