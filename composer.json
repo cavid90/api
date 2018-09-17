@@ -2,16 +2,16 @@
   "name": "api/php-restfull-api",
   "minimum-stability": "dev",
   "prefer-stable": true,
-  "type": "project",
+  "type": "metapackage",
   "description": "Php restfull api example",
   "homepage": "http://cavid.net",
   "license": "No License",
   "version": "1.0",
-  "repositories": [{
+  "repositories": [
+    {
     "type": "vcs",
-    "url": "git@github.com:cavid90/api.git",
-    "reference": "origin/master"
-  }
+    "url": "git@github.com:cavid90/api.git"
+    }
   ],
   "require": {
     "php": ">=5.6"
