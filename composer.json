@@ -9,7 +9,8 @@
   "version": "1.0",
   "repositories": [{
     "type": "vcs",
-    "url": "https://github.com/cavid90/api.git"
+    "url": "git@github.com:cavid90/api.git",
+    "reference": "origin/master"
   }
   ],
   "require": {
