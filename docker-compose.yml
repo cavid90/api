@@ -13,7 +13,7 @@ services:
 
         # a name for easier reference
         image: apiexample
-
+        container_name: web
         # map host port 8080 to container port 80
         ports:
             - 8080:80
@@ -24,20 +24,20 @@ services:
           - /var/www/html
         # first load the 'db' service
         depends_on:
-          - localhost
+          - mysql
 
         # make 'db' a known service/host inside of 'web'
         # we use this to make a mysql connection to host 'db'
         links:
-          - localhost:localhost
+          - mysql
 
-    localhost:
+    mysql:
         # use a default image
         image: mysql:5.6
 
         container_name: localhost
 
-        restart: unless-stopped
+        restart: always
 
         volumes:
           - ./database:/docker-entrypoint-initdb.d
