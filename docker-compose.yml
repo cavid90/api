@@ -1,5 +1,5 @@
 # use version 3 of the docker compose syntax
-version: '3'
+version: '3.3'
 services:
   # we named our first service 'web'
     web:
@@ -47,7 +47,6 @@ services:
 
         # the mysql image uses these to create database and users
         environment:
-          MYSQL_SERVERNAME: localhost
           MYSQL_ROOT_PASSWORD:
           MYSQL_DATABASE: apitest
           MYSQL_USER: root
