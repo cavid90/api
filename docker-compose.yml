@@ -21,7 +21,7 @@ services:
         - VIRTUAL_HOST=apiexample.com
 
     volumes:
-      - /var/www/api
+      - /var/www/html/api
     # first load the 'db' service
     depends_on:
       - localhost
@@ -36,7 +36,7 @@ services:
     image: mysql:5.6
 
     volumes:
-      - /var/www/api/database/orders.sql
+      - /var/www/html/api/database/orders.sql
     # again, port mapping
     ports:
       - 13306:3306
