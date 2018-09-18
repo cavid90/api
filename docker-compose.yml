@@ -24,14 +24,14 @@ services:
           - /var/www/html
         # first load the 'db' service
         depends_on:
-          - mysql
+          - localhost
 
         # make 'db' a known service/host inside of 'web'
         # we use this to make a mysql connection to host 'db'
         links:
-          - mysql
+          - localhost
 
-    mysql:
+    localhost:
         # use a default image
         image: mysql:5.6
 
