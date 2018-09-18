@@ -36,7 +36,7 @@ class Db
     private function __construct()
     {
         try {
-            $connectionHost = "mysql:".(($this->_socket !== '') ? 'unix_socket='.$this->_socket : "host=".$this->_host);
+            $connectionHost = "mysql:host=".$this->_host;
             $this->_connection  = new \PDO($connectionHost.";dbname=$this->_database", $this->_username, $this->_password);
             $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->_connection->setAttribute(PDO::ATTR_EMULATE_PREPARES, true);

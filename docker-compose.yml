@@ -36,7 +36,7 @@ services:
     image: mysql:5.6
 
     volumes:
-      - /var/www/html/database/orders.sql
+      - ./database:/docker-entrypoint-initdb.d
     # again, port mapping
     ports:
       - 13306:3306
