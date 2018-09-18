@@ -4,16 +4,15 @@ FROM php:7.0-apache
 # File Author / Maintainer
 MAINTAINER Cavid Kerimov
 
-RUN apt-get update
+RUN apt-get -y update
 
 # Install mysql, pdo extenions
 RUN docker-php-ext-install pdo_mysql
-RUN apt-get install nano
+RUN apt-get -y install nano
 
 # Enable apache mods.
 #RUN a2enmod php7.0
 RUN a2enmod rewrite
-RUN apt-get -y install git
 
 #RUN apt-get install -y software-properties-common && apt-get update
 #RUN apt-get install -y - force-yes curl
@@ -26,9 +25,13 @@ EXPOSE 80
 EXPOSE 8000
 EXPOSE 443
 
-RUN git clone https://github.com/cavid90/api.git /var/www/html
+
 # Update the default apache site with the config we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
+RUN a2enmod rewrite
 RUN service apache2 restart
+
+RUN apt-get -y install git
+RUN git clone https://github.com/cavid90/api.git /var/www/html
 # By default start up apache in the foreground, override with /bin/bash for interative.
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
