@@ -16,7 +16,6 @@ class Db
 
     private $_connection;
     private static $_instance; //The single instance
-    private $_socket = null;
     private $_host = 'localhost';
     private $_username = 'root';
     private $_password = '';
@@ -36,8 +35,7 @@ class Db
     private function __construct()
     {
         try {
-            $connectionHost = "mysql:host=".$this->_host;
-            $this->_connection  = new \PDO($connectionHost.";dbname=$this->_database", $this->_username, $this->_password);
+            $this->_connection  = new \PDO("mysql:host=$this->_host;dbname=$this->_database", $this->_username, $this->_password);
             $this->_connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->_connection->setAttribute(PDO::ATTR_EMULATE_PREPARES, true);
             $this->_connection->exec("set names utf8");
