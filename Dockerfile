@@ -29,6 +29,6 @@ EXPOSE 443
 RUN git clone https://github.com/cavid90/api.git /var/www/api
 # Update the default apache site with the config we created.
 ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
-
+RUN service apache2 restart
 # By default start up apache in the foreground, override with /bin/bash for interative.
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
