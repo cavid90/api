@@ -4,7 +4,7 @@ services:
   # we named our first service 'web'
   web:
     # passing a hostname to the container (optinal)
-    hostname: apiexample.local
+    hostname: apiexample.pro
 
     # build a custom image
     build:
@@ -21,7 +21,7 @@ services:
         - VIRTUAL_HOST=apiexample.com
 
     volumes:
-      - /var/www/html/api
+      - /var/www/html
     # first load the 'db' service
     depends_on:
       - localhost
@@ -36,7 +36,7 @@ services:
     image: mysql:5.6
 
     volumes:
-      - /var/www/html/api/database/orders.sql
+      - /var/www/html/database/orders.sql
     # again, port mapping
     ports:
       - 13306:3306
