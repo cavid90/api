@@ -22,7 +22,7 @@ ENV APACHE_LOCK_DIR /var/lock/apache2
 ENV APACHE_PID_FILE /var/run/apache2.pid
 # Expose apache.
 EXPOSE 80
-EXPOSE 8000
+EXPOSE 8080
 EXPOSE 443
 
 

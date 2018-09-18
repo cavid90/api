@@ -13,7 +13,6 @@ class Db
     /**
      * Get the pdo database connection
      */
-
     private $_connection;
     private static $_instance; //The single instance
     private $_host = 'localhost';
