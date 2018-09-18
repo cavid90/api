@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8dcf43cf-f039-4824-9666-3fbafc14525b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Classes/Db.php" afterPath="$PROJECT_DIR$/Classes/Db.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-compose.yml" afterPath="$PROJECT_DIR$/docker-compose.yml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,14 +25,14 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Db.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Db.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Classes/Db.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="163">
+              <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding>
                 <element signature="e#7#88#0#PHP" expanded="true" />
-                <marker date="1537302945550" expanded="true" signature="2197:2251" ph="INSERT INTO ${$table}... " />
+                <marker date="1537303022314" expanded="true" signature="2190:2244" ph="INSERT INTO ${$table}... " />
               </folding>
             </state>
           </provider>
@@ -57,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+            <state relative-caret-position="35">
+              <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -143,8 +144,8 @@
         <option value="$PROJECT_DIR$/install.php" />
         <option value="$PROJECT_DIR$/apache-config.conf" />
         <option value="$PROJECT_DIR$/Dockerfile" />
-        <option value="$PROJECT_DIR$/Classes/Db.php" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/Classes/Db.php" />
       </list>
     </option>
   </component>
@@ -361,7 +362,7 @@
       <workItem from="1537118767131" duration="24422000" />
       <workItem from="1537185096853" duration="807000" />
       <workItem from="1537201513362" duration="8662000" />
-      <workItem from="1537268488914" duration="28488000" />
+      <workItem from="1537268488914" duration="28527000" />
     </task>
     <task id="LOCAL-00001" summary="Php restfull api">
       <created>1537132757540</created>
@@ -699,11 +700,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537302970698</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="composer.lock added">
+      <created>1537302990484</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1537302990484</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62379000" />
+    <option name="totallyTimeSpent" value="62418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -757,7 +765,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#7#88#0#PHP" expanded="true" />
-            <marker date="1537302945550" expanded="true" signature="2197:2251" ph="INSERT INTO ${$table}... " />
+            <marker date="1537303022314" expanded="true" signature="2190:2244" ph="INSERT INTO ${$table}... " />
           </folding>
         </state>
       </provider>
@@ -855,7 +863,7 @@
           <caret line="103" column="5" lean-forward="false" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
           <folding>
             <element signature="e#7#88#0#PHP" expanded="true" />
-            <marker date="1537302945550" expanded="true" signature="2197:2251" ph="INSERT INTO ${$table}... " />
+            <marker date="1537303022314" expanded="true" signature="2190:2244" ph="INSERT INTO ${$table}... " />
           </folding>
         </state>
       </provider>
@@ -929,7 +937,7 @@
           <caret line="103" column="5" lean-forward="false" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="5" />
           <folding>
             <element signature="e#7#88#0#PHP" expanded="true" />
-            <marker date="1537302945550" expanded="true" signature="2197:2251" ph="INSERT INTO ${$table}... " />
+            <marker date="1537303022314" expanded="true" signature="2190:2244" ph="INSERT INTO ${$table}... " />
           </folding>
         </state>
       </provider>
@@ -1133,22 +1141,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Db.php">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="e#7#88#0#PHP" expanded="true" />
-            <marker date="1537302945550" expanded="true" signature="2197:2251" ph="INSERT INTO ${$table}... " />
-          </folding>
+        <state relative-caret-position="35">
+          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+    <entry file="file://$PROJECT_DIR$/Classes/Db.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="46" column="27" lean-forward="false" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="163">
+          <caret line="18" column="24" lean-forward="false" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#7#88#0#PHP" expanded="true" />
+            <marker date="1537303022314" expanded="true" signature="2190:2244" ph="INSERT INTO ${$table}... " />
+          </folding>
         </state>
       </provider>
     </entry>
