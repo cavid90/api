@@ -2,50 +2,52 @@
 version: '3'
 services:
   # we named our first service 'web'
-  web:
-    # passing a hostname to the container (optinal)
-    hostname: apiexample.pro
+    web:
+        # passing a hostname to the container (optinal)
+        hostname: apiexample.pro
 
-    # build a custom image
-    build:
-      context: .
-      dockerfile: Dockerfile
+        # build a custom image
+        build:
+          context: .
+          dockerfile: Dockerfile
 
-    # a name for easier reference
-    image: apiexample
+        # a name for easier reference
+        image: apiexample
 
-    # map host port 8080 to container port 80
-    ports:
-        - 8000:80
-    environment:
-        - VIRTUAL_HOST=apiexample.com
+        # map host port 8080 to container port 80
+        ports:
+            - 8000:80
+        environment:
+            - VIRTUAL_HOST=apiexample.com
 
-    volumes:
-      - /var/www/html
-    # first load the 'db' service
-    depends_on:
-      - localhost
+        volumes:
+          - /var/www/html
+        # first load the 'db' service
+        depends_on:
+          - localhost
 
-    # make 'db' a known service/host inside of 'web'
-    # we use this to make a mysql connection to host 'db'
-    links:
-      - localhost:localhost
+        # make 'db' a known service/host inside of 'web'
+        # we use this to make a mysql connection to host 'db'
+        links:
+          - localhost:localhost
 
-  localhost:
-    # use a default image
-    image: mysql:5.6
+    localhost:
+        # use a default image
+        image: mysql:5.6
 
-    volumes:
-      - ./database:/docker-entrypoint-initdb.d
-    # again, port mapping
-    ports:
-      - 13306:3306
+        restart: unless-stopped
 
-    # the mysql image uses these to create database and users
-    environment:
-      MYSQL_SERVERNAME: localhost
-      MYSQL_ROOT_PASSWORD:
-      MYSQL_DATABASE: apitest
-      MYSQL_USER: root
-      MYSQL_ALLOW_EMPTY_PASSWORD: 1
-      MYSQL_PASSWORD:
+        volumes:
+          - ./database:/docker-entrypoint-initdb.d
+        # again, port mapping
+        ports:
+          - 13306:3306
+
+        # the mysql image uses these to create database and users
+        environment:
+          MYSQL_SERVERNAME: localhost
+          MYSQL_ROOT_PASSWORD:
+          MYSQL_DATABASE: apitest
+          MYSQL_USER: root
+          MYSQL_ALLOW_EMPTY_PASSWORD: 1
+          MYSQL_PASSWORD:
