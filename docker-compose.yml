@@ -1,0 +1,47 @@
+# use version 3 of the docker compose syntax
+version: '3'
+services:
+  # we named our first service 'web'
+  web:
+    # passing a hostname to the container (optinal)
+    hostname: apiexample.local
+
+    # build a custom image
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    # a name for easier reference
+    image: apiexample.local
+
+    # map host port 8080 to container port 80
+    ports:
+        - 8000:80
+    environment:
+        - VIRTUAL_HOST=apiexample.com
+
+    volumes:
+      - .:/var/www/app
+    # first load the 'db' service
+    depends_on:
+      - db
+
+    # make 'db' a known service/host inside of 'web'
+    # we use this to make a mysql connection to host 'db'
+    links:
+      - db
+
+  db:
+    # use a default image
+    image: mysql:5.6
+
+    # again, port mapping
+    ports:
+      - 13306:3306
+
+    # the mysql image uses these to create database and users
+    environment:
+      MYSQL_ROOT_PASSWORD: qazwsx1xx
+      MYSQL_DATABASE: apitest
+      MYSQL_USER: root
+      MYSQL_PASSWORD:
