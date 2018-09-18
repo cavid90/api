@@ -1,5 +1,5 @@
 # use version 3 of the docker compose syntax
-version: '3.3'
+version: '3'
 services:
   # we named our first service 'web'
     web:
