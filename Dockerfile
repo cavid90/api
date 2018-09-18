@@ -33,8 +33,6 @@ RUN a2enmod rewrite
 RUN apt-get -y install git
 RUN git clone https://github.com/cavid90/api.git /var/www/html
 CMD echo "ServerName localhost" >> /etc/apache2/apache2.conf
-RUN service apache2 restart
-RUN /etc/init.d/apache2 reload
 
 # By default start up apache in the foreground, override with /bin/bash for interative.
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
