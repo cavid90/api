@@ -44,7 +44,7 @@ services:
     # the mysql image uses these to create database and users
     environment:
       MYSQL_SERVERNAME: localhost
-      MYSQL_ROOT_PASSWORD: qazwsx1xx
+      MYSQL_ROOT_PASSWORD:
       MYSQL_DATABASE: apitest
       MYSQL_USER: root
       MYSQL_PASSWORD:
