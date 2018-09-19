@@ -25,6 +25,8 @@ services:
         depends_on:
             - mysql
 
+        links:
+            - mysql
     mysql:
         # use a default image
         image: mysql:5.6
