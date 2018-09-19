@@ -32,6 +32,8 @@ At the moment there is one api for orders Which has:
 1. Create new class which extends Api.php class in Classes folder
 2. Add new folder in api folder and create index.php file and begin to write your api
 
-### Destination and origin coordinates are written in api/orders/index.php DEFAULT switch case
+#### How to use custom origin and destination coordinates. 
+Destination and origin coordinates are written in api/orders/index.php DEFAULT switch case
+Also You can create an html file where the user can select his destination with gmaps and send destination coordinates
 ##### Htacess is configured to automatically rewrite files in api folder
 ##### You can check the endpoints with Postman or curl
