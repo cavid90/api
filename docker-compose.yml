@@ -3,9 +3,6 @@ version: '3'
 services:
   # we named our first service 'web'
     web:
-        # passing a hostname to the container (optinal)
-        hostname: apiexample.pro
-
         # build a custom image
         build:
           context: .
@@ -22,11 +19,11 @@ services:
 
         volumes:
           - /var/www/html
-        # first load the 'db' service
+        # add to network
         networks:
             - new
         depends_on:
-          - mysql
+            - mysql
 
     mysql:
         # use a default image
