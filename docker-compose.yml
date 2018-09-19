@@ -3,6 +3,7 @@ version: '3'
 services:
   # we named our first service 'web'
     web:
+        hostname: mmmapi.com
         # build a custom image
         build:
           context: .
@@ -22,6 +23,7 @@ services:
         # add to network
         networks:
             - new
+
         depends_on:
             - mysql
     mysql:
@@ -53,4 +55,6 @@ services:
 networks:
     new:
       driver: bridge
+
+
 
