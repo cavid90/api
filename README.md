@@ -4,10 +4,17 @@ This is restfull api package. You can easily extend it and add more apis
 # Installation
 
 #### Manual
-1. Open Class/Db.php file and replace database credentials with yours
-2. Start install.php file (Example: http://yoursite.com/install.php)
-#### Docker
-Run start.sh on terminal and it will automatically install and initialize mysql, create database and user 
+1. Download or clone the package
+2. Open Class/Db.php file and replace database credentials with yours
+3. Start install.php file (Example: http://yoursite.com/install.php)
+
+#### Docker + start.sh
+1. Download or clone:
+    1. The package
+    2. Or only start.sh file.
+2. Run start.sh on terminal and it will automatically install and initialize mysql, create database and user.
+ 
+PS. set chmod +x to start.sh file in order to make it executable
 
 # How to use
 At the moment there is one api for orders Which has:
@@ -25,5 +32,6 @@ At the moment there is one api for orders Which has:
 1. Create new class which extends Api.php class in Classes folder
 2. Add new folder in api folder and create index.php file and begin to write your api
 
-
+### Destination and origin coordinates are written in api/orders/index.php DEFAULT switch case
 ##### Htacess is configured to automatically rewrite files in api folder
+##### You can check the endpoints with Postman or curl

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8dcf43cf-f039-4824-9666-3fbafc14525b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/start.sh" afterPath="$PROJECT_DIR$/start.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,11 +67,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.sh" pinned="false" current-in-tab="true">
+      <file leaf-file-name="start.sh" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/start.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="435">
+                <caret line="36" column="54" lean-forward="false" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/orders/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -95,7 +118,6 @@
         <option value="$PROJECT_DIR$/orders/index.php" />
         <option value="$PROJECT_DIR$/Classes/Orders.php" />
         <option value="$PROJECT_DIR$/Classes/Api.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/database/orders.sql" />
         <option value="$PROJECT_DIR$/api/orders/index.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -109,6 +131,7 @@
         <option value="$PROJECT_DIR$/Classes/Db.php" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/start.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -157,6 +180,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="apiexample" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiexample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apiexample" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="orders" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -317,14 +358,7 @@
       <workItem from="1537201513362" duration="8662000" />
       <workItem from="1537268488914" duration="43883000" />
       <workItem from="1537359522481" duration="1567000" />
-      <workItem from="1537387546270" duration="1331000" />
-    </task>
-    <task id="LOCAL-00022" summary="Minimum stability for the package">
-      <created>1537141577272</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1537141577272</updated>
+      <workItem from="1537387546270" duration="2502000" />
     </task>
     <task id="LOCAL-00023" summary="Minimum stability for the package">
       <created>1537141665467</created>
@@ -662,11 +696,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537360678389</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Editing start.sh file">
+      <created>1537390043323</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1537390043324</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80672000" />
+    <option name="totallyTimeSpent" value="81843000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -707,7 +748,8 @@
     <MESSAGE value="Added install.php file" />
     <MESSAGE value="Minimum stability for the package" />
     <MESSAGE value="composer.lock added" />
-    <option name="LAST_COMMIT_MESSAGE" value="composer.lock added" />
+    <MESSAGE value="Editing start.sh file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Editing start.sh file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -733,6 +775,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <marker date="1537132143708" expanded="true" signature="1990:2011" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2025" ph="SELECT `stat... " />
+            <marker date="1537132143708" expanded="true" signature="1990:2040" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2048" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2056" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="2302:2340" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2358" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2373" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2381" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2735:2789" ph="SELECT `id`,... $" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -806,6 +860,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <marker date="1537132143708" expanded="true" signature="1990:2011" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2025" ph="SELECT `stat... " />
+            <marker date="1537132143708" expanded="true" signature="1990:2040" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2048" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2056" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="2302:2340" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2358" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2373" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2381" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2735:2789" ph="SELECT `id`,... $" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -813,6 +879,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -863,6 +930,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <marker date="1537132143708" expanded="true" signature="1990:2011" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2025" ph="SELECT `stat... " />
+            <marker date="1537132143708" expanded="true" signature="1990:2040" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2048" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2056" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="2302:2340" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2358" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2373" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2381" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2735:2789" ph="SELECT `id`,... $" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -870,6 +949,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -920,6 +1000,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <marker date="1537132143708" expanded="true" signature="1990:2011" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2025" ph="SELECT `stat... " />
+            <marker date="1537132143708" expanded="true" signature="1990:2040" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2048" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2056" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="2302:2340" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2358" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2373" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2381" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2735:2789" ph="SELECT `id`,... $" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -927,6 +1019,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="629">
           <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -950,16 +1043,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="425">
-            <caret line="25" column="57" lean-forward="false" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1013,13 +1096,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/performance_schema/db.opt" />
     <entry file="file://$PROJECT_DIR$/database/apitest/db.opt" />
-    <entry file="file://$PROJECT_DIR$/api/orders/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1043,6 +1119,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1115">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding>
+            <marker date="1537132143708" expanded="true" signature="1990:2011" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2025" ph="SELECT `stat... " />
+            <marker date="1537132143708" expanded="true" signature="1990:2040" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2048" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="1990:2056" ph="SELECT `stat... $" />
+            <marker date="1537132143708" expanded="true" signature="2302:2340" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2358" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2373" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2302:2381" ph="UPDATE ${{$t... " />
+            <marker date="1537132143708" expanded="true" signature="2735:2789" ph="SELECT `id`,... $" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1074,6 +1162,25 @@
         <state relative-caret-position="85">
           <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/orders/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="42" column="7" lean-forward="false" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="435">
+            <caret line="36" column="54" lean-forward="false" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
