@@ -15,7 +15,7 @@ class Db
      */
     private $_connection;
     private static $_instance; //The single instance
-    private $_host = 'localhost';
+    private $_host = 'mysql';
     private $_username = 'root';
     private $_password = '';
     private $_database = 'apitest';
